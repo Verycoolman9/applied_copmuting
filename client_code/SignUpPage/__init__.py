@@ -13,3 +13,4 @@ class SignUpPage(SignUpPageTemplate):
     # Any code you write here will run before the form opens.
     anvil.users.login_with_form()
     print(f"This user has logged in: {anvil.users.get_user()['email']}")
+    open_form('HomePage')

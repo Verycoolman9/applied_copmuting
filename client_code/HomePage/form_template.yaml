@@ -1,12 +1,19 @@
 components:
-- components: []
+- components:
+  - data_bindings: []
+    event_bindings: {click: primary_color_1_click}
+    layout_properties: {}
+    name: primary_color_1
+    properties: {bold: false, font_size: 21, icon: 'fa:user-circle', icon_align: right, role: primary-color, spacing_above: large, spacing_below: large, text: ''}
+    type: Button
   layout_properties: {slot: nav-right}
   name: navbar_links
-  properties: {}
+  properties: {align: center, gap: huge, spacing_above: large, spacing_below: large, vertical_align: full}
   type: FlowPanel
 - components:
   - components:
-    - layout_properties: {grid_position: 'JYYKHS,ASOWHC'}
+    - event_bindings: {click: time_table_click}
+      layout_properties: {grid_position: 'JYYKHS,ASOWHC'}
       name: time_table
       properties: {text: Time Table}
       type: Link
@@ -53,7 +60,7 @@ components:
     properties:
       role: card
       spacing:
-        margin: [null, null, null, '40']
+        margin: [null, null, null, '50']
     type: ColumnPanel
   - components:
     - layout_properties: {grid_position: 'FFWGVX,XEXMXM'}
@@ -65,7 +72,7 @@ components:
     properties:
       role: card
       spacing:
-        margin: [null, null, null, '40']
+        margin: [null, null, null, '50']
     type: ColumnPanel
   layout_properties: {slot: default}
   name: grid_panel_1

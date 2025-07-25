@@ -46,5 +46,5 @@ services:
 - client_config: {allow_remember_me: true, allow_signup: true, confirm_email: true, enable_automatically: true, mfa_timeout_days: 0, remember_me_days: 7, require_mfa: false, require_secure_passwords: true, use_email: true}
   server_config: {user_table: users}
   source: /runtime/services/anvil/users.yml
-startup: {module: HomePage, type: form}
+startup: {module: StudentHomePage, type: form}
 startup_form: null

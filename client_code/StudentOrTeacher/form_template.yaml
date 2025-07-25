@@ -1,0 +1,36 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'SYBNGI,DRFVRZ'}
+      name: label_1
+      properties: {align: center, bold: true, font_size: 24, text: 'Are you a teacher or a student?'}
+      type: Label
+    - components:
+      - layout_properties: {col_xs: 0, row: PMCJQC, width_xs: 4}
+        name: button_2
+        properties: {align: center, text: teacher}
+        type: Button
+      - layout_properties: {col_xs: 8, row: PMCJQC, width_xs: 3}
+        name: button_1
+        properties: {align: center, text: student}
+        type: Button
+      layout_properties: {grid_position: 'HMMTKS,ZIBCQK'}
+      name: grid_panel_1
+      properties: {}
+      type: GridPanel
+    layout_properties: {grid_position: 'XDRPJM,XEOFIM'}
+    name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

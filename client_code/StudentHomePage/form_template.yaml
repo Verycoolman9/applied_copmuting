@@ -1,9 +1,9 @@
 components:
 - components:
   - data_bindings: []
-    event_bindings: {click: primary_color_1_click}
+    event_bindings: {click: account_information_click}
     layout_properties: {}
-    name: primary_color_1
+    name: account_information
     properties: {bold: false, font_size: 21, icon: 'fa:user-circle', icon_align: right, role: primary-color, spacing_above: large, spacing_below: large, text: ''}
     type: Button
   layout_properties: {slot: nav-right}
@@ -26,8 +26,9 @@ components:
     type: ColumnPanel
   - components:
     - components: []
+      event_bindings: {click: chats_click}
       layout_properties: {grid_position: 'GKGECG,ISNUEL'}
-      name: link_4
+      name: chats
       properties: {text: Chats}
       type: Link
     layout_properties: {col_xs: 5, row: DHBADF, width_xs: 3}
@@ -39,8 +40,9 @@ components:
       spacing_below: large
     type: ColumnPanel
   - components:
-    - layout_properties: {grid_position: 'XBRQOM,SRHIUX'}
-      name: link_3
+    - event_bindings: {click: dashboard_click}
+      layout_properties: {grid_position: 'XBRQOM,SRHIUX'}
+      name: dashboard
       properties: {text: Dashboard}
       type: Link
     layout_properties: {col_xs: 9, row: DHBADF, width_xs: 3}
@@ -51,8 +53,9 @@ components:
         margin: [null, null, null, '-100']
     type: ColumnPanel
   - components:
-    - layout_properties: {grid_position: 'DKCZLJ,UQTBYS'}
-      name: link_2
+    - event_bindings: {click: event_signup_click}
+      layout_properties: {grid_position: 'DKCZLJ,UQTBYS'}
+      name: event_signup
       properties: {text: Event Sign-up}
       type: Link
     layout_properties: {col_xs: 0, row: WDZQKE, width_xs: 4}
@@ -63,8 +66,9 @@ components:
         margin: [null, null, null, '50']
     type: ColumnPanel
   - components:
-    - layout_properties: {grid_position: 'FFWGVX,XEXMXM'}
-      name: link_1
+    - event_bindings: {click: points_tally_click}
+      layout_properties: {grid_position: 'FFWGVX,XEXMXM'}
+      name: points_tally
       properties: {text: Points Tally}
       type: Link
     layout_properties: {col_xs: 4, row: WDZQKE, width_xs: 4}

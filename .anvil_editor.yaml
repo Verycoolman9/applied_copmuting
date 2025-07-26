@@ -12,7 +12,9 @@ unique_ids:
     StudentHomePage.StudentPointsTally: '1753053105595349862792481.0984'
     StudentHomePage.StudentTimeTablePage: '1752631594195310487300619.3649'
     StudentOrTeacher: '1753417643884462917479360.3597'
+    StudentSignup: '1753491417196503896515441.422'
     TeacherHomePage: '175341831232425131912540.82703'
+    TeacherSignup: '1753491390157420458609680.1202'
   modules: {}
   scripts: {}
   server_modules: {}

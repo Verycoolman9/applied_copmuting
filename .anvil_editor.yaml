@@ -16,4 +16,5 @@ unique_ids:
     TeacherSignup: '1753491390157420458609680.1202'
   modules: {}
   scripts: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1755073843816663340677692.3687'

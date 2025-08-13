@@ -20,20 +20,16 @@ from anvil.users import signup_with_email, login_with_email
 ALLOWED_STUDENT_EMAIL = "@schools.vic.edu.au"
 ALLOWED_TEACHER_EMAIL = "@education.vic.gov.au"
 
-@anvil.server.callable
-def student_signup_or_login(email, password):
-  if not email.lower().endswith(ALLOWED_STUDENT_EMAIL):
-    raise Exception(f"Only student emails ending in {ALLOWED_STUDENT_EMAIL} are allowed.")
-  try:
-    return login_with_email(email, password)
-  except:
-    return signup_with_email(email, password)
 
 @anvil.server.callable
-def teacher_signup_or_login(email, password):
-  if not email.lower().endswith(ALLOWED_TEACHER_EMAIL):
-    raise Exception(f"Only teacher emails ending in {ALLOWED_TEACHER_EMAIL} are allowed.")
+def role_signup_or_login(email, password, allowed_domain):
+  if not email.lower().endswith(allowed_domain.lower()):
+    raise Exception(f"Only emails ending in {allowed_domain} are allowed.")
+
+    # Try logging in first
   try:
     return login_with_email(email, password)
   except:
+    # If no account exists, create one
     return signup_with_email(email, password)
+

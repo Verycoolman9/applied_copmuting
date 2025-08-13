@@ -6,14 +6,14 @@ components:
       properties: {align: center, bold: true, font_size: 24, text: 'Are you a teacher or a student?'}
       type: Label
     - components:
-      - event_bindings: {click: button_2_click}
+      - event_bindings: {click: teacher_button_click}
         layout_properties: {col_xs: 0, row: PMCJQC, width_xs: 4}
-        name: button_2
+        name: teacher_button
         properties: {align: center, text: teacher}
         type: Button
-      - event_bindings: {click: button_1_click}
+      - event_bindings: {click: student_button_click, show: student_button_show}
         layout_properties: {col_xs: 8, row: PMCJQC, width_xs: 3}
-        name: button_1
+        name: student_button
         properties: {align: center, text: student}
         type: Button
       layout_properties: {grid_position: 'HMMTKS,ZIBCQK'}

@@ -18,13 +18,13 @@ class StudentSignup(StudentSignupTemplate):
     print(f"This user has logged in: {anvil.users.get_user()['email']}")
     open_form('StudentHomePage')
 
-@anvil.server.callable
+@anvil.server
 def restricted_signup(email, password):
   if not email.lower().endswith(ALLOWED_DOMAIN):
     raise Exception(f"Only emails ending in {ALLOWED_DOMAIN} are allowed.")
   return signup_with_email(email, password)
 
-@anvil.server.callable
+@anvil.server
 def restricted_login(email, password):
   if not email.lower().endswith(ALLOWED_DOMAIN):
    raise Exception(f"Only emails ending in {ALLOWED_DOMAIN} are allowed.")

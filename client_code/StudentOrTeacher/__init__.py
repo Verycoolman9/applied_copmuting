@@ -14,7 +14,7 @@ class StudentOrTeacher(StudentOrTeacherTemplate):
     self.init_components(**properties)
 
   def student_button_click(self, **event_args):
-    open_form('StudentSignUp')
+    open_form('StudentSignup')
     email = self.email_box.text.strip()
     password = self.password_box.text
     try:
@@ -24,7 +24,7 @@ class StudentOrTeacher(StudentOrTeacherTemplate):
       alert(str(e))
 
   def teacher_button_click(self, **event_args):
-    open_form('TeacherSignUp')
+    open_form('TeacherSignup')
     email = self.email_box.text.strip()
     password = self.password_box.text
     try:

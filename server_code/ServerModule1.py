@@ -32,4 +32,3 @@ def role_signup_or_login(email, password, allowed_domain):
   except:
     # If no account exists, create one
     return signup_with_email(email, password)
-

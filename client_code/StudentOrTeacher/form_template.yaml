@@ -11,7 +11,7 @@ components:
         name: teacher_button
         properties: {align: center, text: teacher}
         type: Button
-      - event_bindings: {click: student_button_click, show: student_button_show}
+      - event_bindings: {click: student_button_click}
         layout_properties: {col_xs: 8, row: PMCJQC, width_xs: 3}
         name: student_button
         properties: {align: center, text: student}
